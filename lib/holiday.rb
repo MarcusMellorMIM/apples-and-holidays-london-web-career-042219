@@ -82,9 +82,9 @@ def all_supplies_in_holidays(holiday_hash)
         end
       end
       return_str = "  #{key}:"
+      return_str.gsub!("_"," ")
       return_str.gsub!(/\S+/, &:capitalize)
       return_str += " #{items}"
-      return_str.gsub!("_"," ")
       puts "#{return_str}"
     end
   end
