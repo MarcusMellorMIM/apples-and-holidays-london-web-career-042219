@@ -96,7 +96,7 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, holidays |
     holidays.each do | key, value |
       value.each do | x |
-        if value=="BBQ"
+        if x=="BBQ"
           holiday_names << key
         end
       end
